@@ -1,0 +1,33 @@
+<html>
+<head>
+	<title>
+	</title>
+</head>
+<body>
+put the value here 
+<input type="text" id="row"></input>
+<button onclick="myFunction()" >Sub </button>
+<div id="container"></div><!---->
+<script>
+
+function myFunction(){
+
+
+    //Get the value the user gave
+    var nr = document.getElementById("row").value;
+    //
+    var c=parseInt(nr);
+    var div=document.getElementById("container");
+     div.innerHTML = " ";
+      div.innerHTML += "<table border='1' id='table'>";
+     document.getElementById('table').innerHTML += "<tr><td>SUBJECT</td><td>POINTS</td></tr>"; 
+
+      for (i = 0; i < c; i++) {
+
+        //Write the rows and cells
+        document.getElementById('table').innerHTML += "<tr><td><input type='text' id= 'sub'> </td><td><input type='text' id='points'></td></tr>";
+}
+}
+</script>
+</body>
+ </html>
